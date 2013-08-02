@@ -1,0 +1,49 @@
+Key Report is a tool to report on when PGP keys expire.
+
+Displays details about your keyring:
+
+- Displays keys that have expired (error).
+- Displays keys that are nearly expired (critical).
+- Displays keys that are will expire soon (warning).
+- Displays keys that are valid.
+- Displays keys that never expire.
+- Displays keys that have been revoked.
+
+* Arguments
+
+  Key Report takes three optional arguments:
+
+  : key-report.py [--test] [--critical DAYS] [--warning DAYS]
+
+  --test:
+
+  Run internal tests.
+
+  --critical (days)
+
+  Keys that expire within this many days are about to expire and must be acted
+  upon immediately.  Defaults to 30 days.  Use this parameter to customize the
+  day range.
+
+  --warning (days)
+
+  Keys that expire within this many days will expire soon and should be updated
+  in the near future.  Defaults to 90 days.  Use this parameter to customize the
+  day range.
+
+* License
+
+  Copyright (C) 2013  Nick Daly <nick.m.daly@gmail.com>
+
+  This program is free software: you can redistribute it and/or modify it under
+  the terms of the GNU Affero General Public License as published by the Free
+  Software Foundation, either version 3 of the License, or (at your option) any
+  later version.
+
+  This program is distributed in the hope that it will be useful, but WITHOUT
+  ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+  FOR A PARTICULAR PURPOSE.  See the GNU Affero General Public License for more
+  details.
+
+  You should have received a copy of the GNU Affero General Public License along
+  with this program.  If not, see <http://www.gnu.org/licenses/>.
